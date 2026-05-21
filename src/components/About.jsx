@@ -39,7 +39,7 @@ export default function About() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
               <div className="absolute inset-0 border-2 border-accent rounded-2xl translate-x-4 translate-y-4" />
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/10">
-                <span className="text-6xl">👨‍💻</span>
+                <span className="text-6xl"><image src="./lana.jpg" alt="my picture!!"></image></span>
               </div>
             </div>
           </ScrollReveal>
