@@ -1,5 +1,6 @@
 import ScrollReveal from './ScrollReveal'
 import useParallax from '../hooks/useParallax'
+import lana from './lana.jpg'
 
 export default function About() {
   const { ref, y } = useParallax(0.2)
@@ -38,9 +39,9 @@ export default function About() {
           <ScrollReveal type="fadeRight" delay={0.4}>
             <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
               <div className="absolute inset-0 border-2 border-accent rounded-2xl translate-x-4 translate-y-4" />
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/10">
-                <span className="text-6xl"><image src="./lana.jpg" alt="my picture!!"></image></span>
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-2xl overflow-hidden flex items-center justify-center backdrop-blur-sm border border-white/10">
+                  <img src={lana} alt="Ali's portrait" className="w-full h-full object-cover" />
+                </div>
             </div>
           </ScrollReveal>
         </div>
